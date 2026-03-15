@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | DFB Construction Services</title>
+
+    <style>
+        :root {
+            --primary: #003366;
+            --accent: #0056b3;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: var(--light);
+            color: #333;
+        }
+
+        .header {
+            background: var(--primary);
+            color: white;
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            letter-spacing: 1px;
+        }
+
+        .gallery-container {
+            padding: 60px 10%;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 6px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            background: white;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+
+        .caption {
+            padding: 15px;
+            font-size: 1rem;
+            color: var(--primary);
+            font-weight: 600;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Project Gallery</h1>
+</div>
+
+<div class="gallery-container">
+    <div class="gallery-grid">
+
+        <!-- Replace these images with your own -->
+        <div class="gallery-item">
+            <img src="images/project1.jpg" alt="Project 1">
+            <div class="caption">Modern Residential Build</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/project2.jpg" alt="Project 2">
+            <div class="caption">Luxury Interior Renovation</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/project3.jpg" alt="Project 3">
+            <div class="caption">Structural Foundation Work</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/project4.jpg" alt="Project 4">
+            <div class="caption">Ongoing Construction Site</div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
