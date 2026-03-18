@@ -140,6 +140,23 @@ nav {
     max-width: 900px;
 }
 
+/* Center all section content */
+.section {
+    text-align: center;
+}
+
+.section p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+}
+
+.section .btn {
+    display: inline-block;
+    margin: 20px auto 0;
+}
+
 /* GRID SYSTEM */
 .grid {
     display: grid;
