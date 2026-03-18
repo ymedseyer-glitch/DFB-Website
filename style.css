@@ -133,10 +133,11 @@ nav {
     background: var(--accent-lighter);
 }
 
-.section h2 {
+.section p {
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
 }
 
 /* GRID SYSTEM */
