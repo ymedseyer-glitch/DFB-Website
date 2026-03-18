@@ -3,77 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DFB Construction Services | Modern Excellence</title>
+    <title>DFB Construction Services | Built on Purpose</title>
 
     <style>
-        :root { 
-            --primary: #003366; 
-            --accent: #0056b3; 
-            --dark: #1a1a1a; 
-            --light: #f8f9fa; 
+        :root {
+            --primary: #003366;
+            --accent: #0056b3;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
         }
 
-        body { 
-            font-family: 'Helvetica Neue', Arial, sans-serif; 
-            margin: 0; 
-            padding: 0; 
-            color: #333; 
-            background-color: var(--light); 
-            line-height: 1.6; 
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--light);
+            color: #333;
         }
 
         /* Navigation */
-        nav { 
-            background: white; 
-            padding: 10px 5%; 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
-            position: sticky; 
-            top: 0; 
-            z-index: 1000; 
+        nav {
+            background: white;
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
-        .logo-container { 
-            display: flex; 
-            align-items: center; 
-            gap: 12px; 
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
         }
 
-        .logo-container img { 
-            height: 60px; 
+        .logo-container img {
+            height: 60px;
         }
 
-        .logo-text { 
-            font-weight: 800; 
-            font-size: 1.3rem; 
-            color: var(--dark); 
-            letter-spacing: 1.2px; 
+        .logo-text {
+            font-weight: 800;
+            font-size: 1.3rem;
+            color: var(--dark);
+            letter-spacing: 1.2px;
         }
 
-        .nav-links a { 
-            margin-left: 25px; 
-            text-decoration: none; 
-            color: var(--dark); 
-            font-weight: 500; 
-            transition: 0.3s; 
+        .nav-links a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: 0.3s;
         }
 
-        .nav-links a:hover { 
-            color: var(--accent); 
+        .nav-links a:hover {
+            color: var(--accent);
         }
 
-        /* Hamburger hidden on desktop */
         .hamburger {
             display: none;
             font-size: 2rem;
             cursor: pointer;
         }
 
-        /* Mobile responsiveness */
         @media (max-width: 768px) {
-
             nav {
                 flex-wrap: wrap;
                 padding: 15px 5%;
@@ -112,102 +108,118 @@
             }
         }
 
-        /* Hero Section */
-        .hero { 
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-            url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80'); 
-            background-size: cover; 
-            background-position: center; 
-            height: 70vh; 
-            display: flex; 
-            flex-direction: column; 
-            justify-content: center; 
-            align-items: center; 
-            color: white; 
-            text-align: center; 
-            padding: 140px 20px 0; /* FIXED: adds space below nav */
+        /* Hero */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+            url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 140px 20px 0;
         }
 
-        @media (max-width: 768px) {
-            .hero {
-                padding-top: 180px; /* FIXED: extra space for mobile nav */
-            }
+        .hero h1 {
+            font-size: 3rem;
+            max-width: 900px;
+            line-height: 1.2;
+            text-transform: uppercase;
+            font-weight: 800;
         }
 
-        .hero h2 { 
-            font-size: 3rem; 
-            margin-bottom: 10px; 
-            text-transform: uppercase; 
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin-top: 15px;
+            font-weight: 300;
         }
 
-        .hero p { 
-            font-size: 1.3rem; 
-            max-width: 700px; 
-            font-weight: 300; 
+        .btn {
+            background: var(--accent);
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 3px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 30px;
+            transition: 0.3s;
         }
 
-        /* Services Section */
-        .content-section { 
-            padding: 80px 10%; 
-            text-align: center; 
+        .btn:hover {
+            background: var(--primary);
         }
 
-        .grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-            gap: 30px; 
-            margin-top: 40px; 
+        /* Sections */
+        .section {
+            padding: 80px 10%;
+            text-align: center;
         }
 
-        .card { 
-            background: white; 
-            padding: 40px 20px; 
-            border-radius: 4px; 
-            transition: 0.3s; 
-            border-bottom: 3px solid transparent; 
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
+        .section h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
         }
 
-        .card:hover { 
-            transform: translateY(-10px); 
-            border-color: var(--accent); 
-            box-shadow: 0 12px 20px rgba(0,0,0,0.1); 
+        .section p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
         }
 
-        .card h3 { 
-            color: var(--primary); 
-            margin-bottom: 15px; 
+        /* Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
         }
 
-        /* CTA Button */
-        .btn { 
-            background: var(--accent); 
-            color: white; 
-            padding: 15px 35px; 
-            text-decoration: none; 
-            border-radius: 2px; 
-            font-weight: bold; 
-            display: inline-block; 
-            margin-top: 30px; 
-            transition: 0.3s; 
+        .card {
+            background: white;
+            padding: 35px 25px;
+            border-radius: 6px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: 0.3s;
+            border-bottom: 3px solid transparent;
         }
 
-        .btn:hover { 
-            background: var(--primary); 
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent);
         }
 
-        footer { 
-            background: var(--dark); 
-            color: white; 
-            padding: 40px 5%; 
-            text-align: center; 
-            margin-top: 40px; 
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        /* Values Icons */
+        .value-icon {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 40px 5%;
+            text-align: center;
+            margin-top: 40px;
         }
     </style>
 </head>
 
 <body>
 
+<!-- NAVIGATION -->
 <nav>
     <div class="logo-container">
         <img src="logo.png" alt="DFB Logo">
@@ -225,32 +237,96 @@
     </div>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
-    <h2>CRAFTING YOUR DREAM HOME</h2>
-    <p>DFB Construction Services specializes in premium residential builds, custom renovations, and modern living spaces tailored to your family's lifestyle.</p>
-    <a href="#" class="btn">START YOUR JOURNEY</a>
+    <h1>Built on Purpose. Built for People.</h1>
+    <p>"We don't just build structures — we build spaces where life begins."</p>
+    <a href="contact.html" class="btn">Start Your Project</a>
 </section>
 
-<section class="content-section">
-    <small style="color:var(--accent); font-weight:bold; letter-spacing:2px;">OUR EXPERTISE</small>
-    <h2 style="font-size: 2.5rem;">Precision Construction</h2>
-
+<!-- WHO WE BUILD FOR -->
+<section class="section">
+    <h2>Who We Build For</h2>
     <div class="grid">
         <div class="card">
-            <h3>Architectural Build</h3>
-            <p>Bringing complex blueprints to life with exacting standards.</p>
+            <h3>Residential</h3>
+            <p>Family homes designed for comfort, beauty, and everyday living.</p>
         </div>
-
         <div class="card">
-            <h3>Project Management</h3>
-            <p>Full-cycle oversight ensuring timelines and budgets are met.</p>
+            <h3>Educational</h3>
+            <p>Schools and learning spaces built for the next generation.</p>
         </div>
-
         <div class="card">
-            <h3>Civil Engineering</h3>
-            <p>Infrastructure solutions designed to stand the test of time.</p>
+            <h3>Commercial</h3>
+            <p>Smart, efficient spaces for businesses and organizations.</p>
+        </div>
+        <div class="card">
+            <h3>Institutional</h3>
+            <p>Purpose-driven structures that serve communities.</p>
         </div>
     </div>
+</section>
+
+<!-- MISSION & VISION -->
+<section class="section" style="background:white;">
+    <h2>Our Mission</h2>
+    <p>To design and build purposeful spaces that serve the real needs of people — delivering every project with integrity, creativity, and genuine care for community and the environment.</p>
+
+    <h2 style="margin-top:60px;">Our Vision</h2>
+    <p>To be the most trusted design-build partner for families and institutions — known for building spaces that uplift lives, endure through generations, and leave the environment better than we found it.</p>
+</section>
+
+<!-- WHAT SETS US APART -->
+<section class="section">
+    <h2>What Sets Us Apart</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Personal, Hands-On Service</h3>
+            <p>You work directly with our founders from first sketch to final handover.</p>
+        </div>
+        <div class="card">
+            <h3>Affordable Without Cutting Corners</h3>
+            <p>Smart design and honest procurement deliver quality you can trust.</p>
+        </div>
+        <div class="card">
+            <h3>End-to-End Under One Roof</h3>
+            <p>Design and construction in one seamless engagement.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CORE VALUES -->
+<section class="section" style="background:white;">
+    <h2>Our Core Values</h2>
+    <div class="grid">
+        <div class="card">
+            <div class="value-icon">🏛️</div>
+            <h3>Integrity</h3>
+            <p>We do what we say, and build what we promise.</p>
+        </div>
+        <div class="card">
+            <div class="value-icon">💡</div>
+            <h3>Innovation</h3>
+            <p>Smart, creative solutions that improve quality without inflating cost.</p>
+        </div>
+        <div class="card">
+            <div class="value-icon">🤝</div>
+            <h3>People-First</h3>
+            <p>Every decision centers on the families and communities we serve.</p>
+        </div>
+        <div class="card">
+            <div class="value-icon">🌿</div>
+            <h3>Sustainability</h3>
+            <p>We build responsibly for future generations.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+    <h2>Let’s Build Together</h2>
+    <p>Your space. Your story. Our craft.</p>
+    <a href="contact.html" class="btn">Get in Touch</a>
 </section>
 
 <footer>
