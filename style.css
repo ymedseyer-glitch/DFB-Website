@@ -42,8 +42,15 @@ nav {
     gap: 12px;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
 .logo-container img {
-    height: 60px;
+    height: 100px; /* increased size */
+    filter: drop-shadow(0 0 8px var(--accent)); /* subtle gold glow */
 }
 
 .logo-text {
