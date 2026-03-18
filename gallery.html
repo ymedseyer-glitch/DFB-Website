@@ -5,171 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery | DFB Construction Services</title>
 
-    <style>
-        :root {
-            --primary: #003366;
-            --accent: #0056b3;
-            --dark: #1a1a1a;
-            --light: #f8f9fa;
-        }
+    <!-- Font Awesome (optional if you want icons later) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-        body {
-            margin: 0;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            background: var(--light);
-            color: #333;
-        }
-
-        /* Navigation */
-        <nav style="background: #000000;">
-    <div class="logo-container">
-        <img src="dfb-logo.png" alt="DFB Construction Services Logo" style="height: 70px;">
-    </div>
-
-    <div class="hamburger" onclick="toggleMenu()" style="color: var(--accent);">☰</div>
-
-    <div class="nav-links" id="navLinks">
-        <a href="index.html" style="color: white;">Home</a>
-        <a href="projects.html" style="color: white;">Projects</a>
-        <a href="gallery.html" style="color: white;">Gallery</a>
-        <a href="contact.html" style="color: white;">Contact</a>
-    </div>
-</nav>
-        }
-
-        .logo-container {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .logo-container img {
-            height: 60px;
-        }
-
-        .logo-text {
-            font-weight: 800;
-            font-size: 1.3rem;
-            color: var(--dark);
-            letter-spacing: 1.2px;
-        }
-
-        .nav-links a {
-            margin-left: 25px;
-            text-decoration: none;
-            color: var(--dark);
-            font-weight: 500;
-            transition: 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent);
-        }
-
-        .hamburger {
-            display: none;
-            font-size: 2rem;
-            cursor: pointer;
-        }
-
-        @media (max-width: 768px) {
-            nav {
-                flex-wrap: wrap;
-                padding: 15px 5%;
-            }
-
-            .logo-container img {
-                height: 50px;
-            }
-
-            .logo-text {
-                font-size: 1.1rem;
-            }
-
-            .hamburger {
-                display: block;
-                margin-left: auto;
-                padding: 10px;
-            }
-
-            .nav-links {
-                width: 100%;
-                display: none;
-                flex-direction: column;
-                text-align: center;
-                background: white;
-                padding: 15px 0;
-            }
-
-            .nav-links a {
-                margin: 10px 0;
-                display: block;
-            }
-
-            .nav-links.show {
-                display: flex;
-            }
-        }
-
-        /* Header */
-        .header {
-            background: var(--primary);
-            color: white;
-            padding: 120px 10% 50px;
-            text-align: center;
-        }
-
-        .header h1 {
-            margin: 0;
-            font-size: 2.8rem;
-            letter-spacing: 1px;
-        }
-
-        /* Gallery */
-        .gallery-container {
-            padding: 60px 10%;
-        }
-
-        .section-title {
-            font-size: 2rem;
-            color: var(--primary);
-            margin-bottom: 25px;
-            text-align: left;
-            font-weight: 700;
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-
-        .gallery-item {
-            overflow: hidden;
-            border-radius: 6px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            background: white;
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            transition: transform 0.4s ease;
-        }
-
-        .gallery-item:hover img {
-            transform: scale(1.08);
-        }
-
-        .caption {
-            padding: 15px;
-            font-size: 1rem;
-            color: var(--primary);
-            font-weight: 600;
-            text-align: center;
-        }
-    </style>
+    <!-- Global Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -177,8 +17,7 @@
 <!-- NAVIGATION -->
 <nav>
     <div class="logo-container">
-        <img src="logo.png" alt="DFB Logo">
-        <span class="logo-text">DFB CONSTRUCTION SERVICES</span>
+        <img src="dfb-logo.png" alt="DFB Construction Services Logo">
     </div>
 
     <div class="hamburger" onclick="toggleMenu()">☰</div>
@@ -186,22 +25,21 @@
     <div class="nav-links" id="navLinks">
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
-        <a href="about.html">About</a>
         <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
     </div>
 </nav>
 
 <!-- PAGE HEADER -->
-<div class="header">
-    <h1>Project Gallery</h1>
-</div>
+<section class="section alt">
+    <h2>Project Gallery</h2>
+    <p>A showcase of the spaces we design and build with purpose.</p>
+</section>
 
-<!-- GALLERY SECTIONS -->
-<div class="gallery-container">
+<!-- RESIDENTIAL -->
+<section class="section">
+    <h2>Residential Projects</h2>
 
-    <!-- RESIDENTIAL -->
-    <h2 class="section-title">Residential Projects</h2>
     <div class="gallery-grid">
         <div class="gallery-item">
             <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80">
@@ -213,9 +51,12 @@
             <div class="caption">Warm, Purposeful Living Spaces</div>
         </div>
     </div>
+</section>
 
-    <!-- EDUCATIONAL -->
-    <h2 class="section-title" style="margin-top:60px;">Educational Projects</h2>
+<!-- EDUCATIONAL -->
+<section class="section alt">
+    <h2>Educational Projects</h2>
+
     <div class="gallery-grid">
         <div class="gallery-item">
             <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=800&q=80">
@@ -227,9 +68,12 @@
             <div class="caption">Classroom Renovation</div>
         </div>
     </div>
+</section>
 
-    <!-- COMMERCIAL -->
-    <h2 class="section-title" style="margin-top:60px;">Commercial Projects</h2>
+<!-- COMMERCIAL -->
+<section class="section">
+    <h2>Commercial Projects</h2>
+
     <div class="gallery-grid">
         <div class="gallery-item">
             <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80">
@@ -241,9 +85,12 @@
             <div class="caption">Office Interior Fit-Out</div>
         </div>
     </div>
+</section>
 
-    <!-- INSTITUTIONAL -->
-    <h2 class="section-title" style="margin-top:60px;">Institutional Projects</h2>
+<!-- INSTITUTIONAL -->
+<section class="section alt">
+    <h2>Institutional Projects</h2>
+
     <div class="gallery-grid">
         <div class="gallery-item">
             <img src="https://images.unsplash.com/photo-1581091870627-3a5c7f3c1b3b?auto=format&fit=crop&w=800&q=80">
@@ -255,8 +102,11 @@
             <div class="caption">Institutional Hallway Renovation</div>
         </div>
     </div>
+</section>
 
-</div>
+<footer>
+    <p>&copy; 2026 DFB Construction Services. All rights reserved.</p>
+</footer>
 
 <script>
 function toggleMenu() {
