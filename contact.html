@@ -5,203 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | DFB Construction Services</title>
 
-    <!-- Icons (Font Awesome CDN) -->
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <style>
-        :root {
-            --primary: #003366;
-            --accent: #0056b3;
-            --dark: #1a1a1a;
-            --light: #f8f9fa;
-        }
-
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: var(--light);
-            color: #333;
-        }
-
-        /* Navigation */
-        <nav style="background: #000000;">
-    <div class="logo-container">
-        <img src="dfb-logo.png" alt="DFB Construction Services Logo" style="height: 70px;">
-    </div>
-
-    <div class="hamburger" onclick="toggleMenu()" style="color: var(--accent);">☰</div>
-
-    <div class="nav-links" id="navLinks">
-        <a href="index.html" style="color: white;">Home</a>
-        <a href="projects.html" style="color: white;">Projects</a>
-        <a href="gallery.html" style="color: white;">Gallery</a>
-        <a href="contact.html" style="color: white;">Contact</a>
-    </div>
-</nav>
-        }
-
-        .logo-container {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .logo-container img {
-            height: 60px;
-        }
-
-        .logo-text {
-            font-weight: 800;
-            font-size: 1.3rem;
-            color: var(--dark);
-            letter-spacing: 1.2px;
-        }
-
-        .nav-links a {
-            margin-left: 25px;
-            text-decoration: none;
-            color: var(--dark);
-            font-weight: 500;
-            transition: 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent);
-        }
-
-        /* Hamburger */
-        .hamburger {
-            display: none;
-            font-size: 2rem;
-            cursor: pointer;
-        }
-
-        /* Mobile Navigation */
-        @media (max-width: 768px) {
-            nav {
-                flex-wrap: wrap;
-                padding: 15px 5%;
-            }
-
-            .logo-container img {
-                height: 50px;
-            }
-
-            .logo-text {
-                font-size: 1.1rem;
-            }
-
-            .hamburger {
-                display: block;
-                margin-left: auto;
-                padding: 10px;
-            }
-
-            .nav-links {
-                width: 100%;
-                display: none;
-                flex-direction: column;
-                text-align: center;
-                background: white;
-                padding: 15px 0;
-            }
-
-            .nav-links a {
-                margin: 10px 0;
-                display: block;
-            }
-
-            .nav-links.show {
-                display: flex;
-            }
-        }
-
-        /* Page Header */
-        .header {
-            background: var(--primary);
-            color: white;
-            padding: 120px 10% 50px; /* extra top padding for nav */
-            text-align: center;
-        }
-
-        .header h1 {
-            margin: 0;
-            font-size: 2.8rem;
-            letter-spacing: 1px;
-        }
-
-        /* Contact Layout */
-        .contact-wrapper {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 40px;
-            padding: 60px 10%;
-        }
-
-        .contact-box, .contact-form {
-            background: white;
-            padding: 30px;
-            border-radius: 6px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
-
-        .contact-box h2, .contact-form h2 {
-            color: var(--primary);
-            margin-bottom: 20px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-            font-size: 1.1rem;
-        }
-
-        .contact-item i {
-            font-size: 1.5rem;
-            color: var(--accent);
-            margin-right: 15px;
-        }
-
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 1rem;
-        }
-
-        .contact-form button {
-            background: var(--accent);
-            color: white;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 4px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .contact-form button:hover {
-            background: var(--primary);
-        }
-
-        /* Map */
-        .map {
-            margin-top: 40px;
-            padding: 0 10%;
-        }
-
-        iframe {
-            width: 100%;
-            height: 350px;
-            border: none;
-            border-radius: 6px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
-    </style>
+    <!-- Global Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -209,8 +17,7 @@
 <!-- NAVIGATION -->
 <nav>
     <div class="logo-container">
-        <img src="logo.png" alt="DFB Logo">
-        <span class="logo-text">DFB CONSTRUCTION SERVICES</span>
+        <img src="dfb-logo.png" alt="DFB Construction Services Logo">
     </div>
 
     <div class="hamburger" onclick="toggleMenu()">☰</div>
@@ -218,68 +25,58 @@
     <div class="nav-links" id="navLinks">
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
-        <a href="about.html">About</a>
         <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>
     </div>
 </nav>
 
 <!-- PAGE HEADER -->
-<div class="header">
-    <h1>Contact DFB Construction Services</h1>
-</div>
+<section class="section alt">
+    <h2>Contact DFB Construction Services</h2>
+    <p>We’re here to help you build with purpose.</p>
+</section>
 
-<!-- CONTACT CONTENT -->
-<div class="contact-wrapper">
+<!-- CONTACT INFO -->
+<section class="section">
+    <div class="grid">
 
-    <div class="contact-box">
-        <h2>Get in Touch</h2>
-
-        <div class="contact-item">
-            <i class="fa-solid fa-envelope"></i>
-            <span>dfb.acds@gmail.com</span>
+        <div class="card">
+            <i class="fa-solid fa-location-dot" style="font-size: 2rem; color: var(--accent);"></i>
+            <h3>Office Address</h3>
+            <p>Cainta, Rizal, Philippines</p>
         </div>
 
-        <div class="contact-item">
-            <i class="fa-brands fa-whatsapp"></i>
-            <span>+63 920 971 9969 (WhatsApp)</span>
+        <div class="card">
+            <i class="fa-solid fa-phone" style="font-size: 2rem; color: var(--accent);"></i>
+            <h3>Phone / Mobile</h3>
+            <p>+63 920 972 9969</p>
         </div>
 
-        <div class="contact-item">
-            <i class="fa-brands fa-viber"></i>
-            <span>+63 920 971 9969 (Viber)</span>
+        <div class="card">
+            <i class="fa-solid fa-envelope" style="font-size: 2rem; color: var(--accent);"></i>
+            <h3>Email</h3>
+            <p>dfb.acds@gmail.com</p>
         </div>
 
-        <div class="contact-item">
-            <i class="fa-solid fa-location-dot"></i>
-            <span>
-                37 Ipil St. Saint Anthony Subd<br>
-                Cainta Rizal, Philippines 1900
-            </span>
+        <div class="card">
+            <i class="fa-solid fa-globe" style="font-size: 2rem; color: var(--accent);"></i>
+            <h3>Website</h3>
+            <p>Coming Soon</p>
         </div>
+
     </div>
+</section>
 
-    <div class="contact-form">
-        <h2>Send Us a Message</h2>
+<!-- CTA -->
+<section class="section alt">
+    <h2>Let’s Build Together</h2>
+    <p>Your space. Your story. Our craft.</p>
+    <a href="mailto:dfb.acds@gmail.com" class="btn">Get in Touch</a>
+</section>
 
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
-
-</div>
-
-<!-- MAP -->
-<div class="map">
-   <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.870833078864!2d121.126455!3d14.580443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c779b056c1f7%3A0x913f4759b57582d3!2sSaint%20Anthony%20Subdivision%2C%2013%20Ipil%20Street%2C%20Cainta%2C%201900%20Rizal%2C%20Philippines!5e0!3m2!1sen!2sph!4v1700000000000"
-    allowfullscreen=""
-    loading="lazy">
-</iframe>
-</div>
+<footer>
+    <p>&copy; 2026 DFB Construction Services. All rights reserved.</p>
+</footer>
 
 <script>
 function toggleMenu() {
