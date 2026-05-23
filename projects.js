@@ -116,3 +116,39 @@ document.addEventListener("keydown", (e) => {
         closeLightbox();
     }
 });
+/* -----------------------------------------
+   ACTIVE SECTION HIGHLIGHTING
+----------------------------------------- */
+
+const sectionMap = {
+    fullhome: document.getElementById("fullhome"),
+    majorreno: document.getElementById("majorreno"),
+    fencegate: document.getElementById("fencegate"),
+    ongoing: document.getElementById("ongoing")
+};
+
+const linkMap = {
+    fullhome: document.getElementById("link-fullhome"),
+    majorreno: document.getElementById("link-majorreno"),
+    fencegate: document.getElementById("link-fencegate"),
+    ongoing: document.getElementById("link-ongoing")
+};
+
+window.addEventListener("scroll", () => {
+    const scrollPos = window.scrollY + window.innerHeight / 2;
+
+    for (const key in sectionMap) {
+        const sec = sectionMap[key];
+        const link = linkMap[key];
+
+        const top = sec.offsetTop;
+        const bottom = top + sec.offsetHeight;
+
+        if (scrollPos >= top && scrollPos < bottom) {
+            // highlight active
+            link.classList.add("active");
+        } else {
+            link.classList.remove("active");
+        }
+    }
+});

@@ -104,3 +104,53 @@
     transform: translate(-35%, -50%);
     z-index: 2;
 }
+/* Floating Section Menu (Left Side + Slide-in) */
+.floating-menu {
+    position: fixed;
+    top: 50%;
+    left: 25px; /* moved to left side */
+    transform: translateY(-50%) translateX(-120%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 3000;
+    animation: slideIn 0.6s ease forwards;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateY(-50%) translateX(0);
+    }
+}
+
+.floating-menu a {
+    background: rgba(0,0,0,0.65);
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.25s ease, transform 0.25s ease;
+    backdrop-filter: blur(4px);
+}
+
+/* Hover effect */
+.floating-menu a:hover {
+    background: #d4b06a;
+    transform: translateX(4px);
+}
+
+/* Active section highlight */
+.floating-menu a.active {
+    background: #d4b06a;
+    color: #000;
+    font-weight: bold;
+    transform: translateX(6px);
+}
+
+/* Mobile: hide floating menu */
+@media (max-width: 768px) {
+    .floating-menu {
+        display: none;
+    }
+}

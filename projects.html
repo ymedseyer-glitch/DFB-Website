@@ -38,7 +38,7 @@
     <h2>Completed Projects</h2>
 
     <!-- FULL HOME BUILD -->
-    <h3 class="project-subtitle">Full Home Build</h3>
+    <h3 id="fullhome" class="project-subtitle">Full Home Build</h3>
     <div class="masonry-grid">
         <!-- 29 photos -->
         <!-- Auto-generated thumbnails -->
@@ -90,7 +90,7 @@
     </div>
 
     <!-- MAJOR RENOVATION -->
-    <h3 class="project-subtitle">Major Renovation</h3>
+    <h3 id="majorreno" class="project-subtitle">Major Renovation</h3>
     <div class="masonry-grid">
         <!-- 14 photos + 3 videos -->
          <!-- MAJOR RENOVATION (14 IMAGES + 3 VIDEOS) -->
@@ -119,7 +119,7 @@
     </div>
 
     <!-- FENCE & GATE -->
-    <h3 class="project-subtitle">Fence & Gate Construction</h3>
+    <h3 id="fencegate" class="project-subtitle">Fence & Gate Construction</h3>
     <div class="masonry-grid">
         <!-- 4 photos + 2 videos -->
          <!-- FENCE & GATE (4 IMAGES + 2 VIDEOS) -->
@@ -139,7 +139,7 @@
 
 <!-- ONGOING PROJECTS -->
 <section class="section alt">
-    <h2>On‑Going Projects</h2>
+    <h2 id="ongoing">On‑Going Projects</h2>
     <div class="masonry-grid">
         <!-- 12 photos + 5 videos -->
          <!-- ON-GOING PROJECTS (12 IMAGES + 5 VIDEOS) -->
@@ -183,6 +183,14 @@ function toggleMenu() {
     document.getElementById("navLinks").classList.toggle("show");
 }
 </script>
+
+<div class="floating-menu">
+    <a href="#fullhome" id="link-fullhome">Full Home Build</a>
+    <a href="#majorreno" id="link-majorreno">Major Renovation</a>
+    <a href="#fencegate" id="link-fencegate">Fence & Gate</a>
+    <a href="#ongoing" id="link-ongoing">On‑Going Projects</a>
+</div>
+
 
 </body>
 </html>
