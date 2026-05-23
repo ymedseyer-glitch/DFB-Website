@@ -148,12 +148,6 @@
     transform: translateX(6px);
 }
 
-/* Mobile: hide floating menu */
-@media (max-width: 768px) {
-    .floating-menu {
-        display: none;
-    }
-}
 @media (max-width: 768px) {
     .floating-menu {
         position: fixed;
