@@ -154,3 +154,31 @@
         display: none;
     }
 }
+@media (max-width: 768px) {
+    .floating-menu {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: row;
+        gap: 8px;
+        background: rgba(0,0,0,0.5);
+        padding: 8px 12px;
+        border-radius: 10px;
+        backdrop-filter: blur(6px);
+        animation: none;
+    }
+
+    .floating-menu a {
+        font-size: 0.75rem;
+        padding: 6px 10px;
+        border-radius: 6px;
+        white-space: nowrap;
+    }
+
+    .floating-menu a.active {
+        background: #d4b06a;
+        color: #000;
+        font-weight: bold;
+    }
+}
