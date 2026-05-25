@@ -186,3 +186,37 @@ footer {
     color: var(--text-light);
     margin-top: 40px;
 }
+/* Logo beside text */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* space between logo and text */
+}
+
+/* Bigger logo */
+.logo-img {
+    width: 70px; /* adjust if you want it bigger */
+    height: auto;
+}
+
+/* Gold text beside logo */
+.logo-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #d4b06a;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .logo-img {
+        width: 55px;
+    }
+
+    .logo-text {
+        font-size: 0.9rem;
+        letter-spacing: 0.5px;
+    }
+}
