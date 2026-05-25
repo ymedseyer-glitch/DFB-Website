@@ -43,11 +43,11 @@ const media_ongoing = [
     })),
 
     // 5 VIDEOS
-   // { type: "video", src: "projects/on-going-project-nuvali/videos/prj-on-going-vid1.mp4" },
-    //{ type: "video", src: "projects/on-going-project-nuvali/videos/prj-on-going-vid2.mp4" },
-    //{ type: "video", src: "projects/on-going-project-nuvali/videos/prj-on-going-vid3.mp4" },
+   { type: "video", src: "projects/on-going-project-nuvali/videos/prj-on-going-vid1.mp4" },
+    { type: "video", src: "projects/on-going-project-nuvali/videos/prj-on-going-vid2.mp4" },
+    { type: "video", src: "projects/on-going-project-nuvali/videos/prj-on-going-vid3.mp4" },
     { type: "video", src: "projects/on-going-project-nuvali/videos/prj-on-going-vid4.mp4" },
-    //{ type: "video", src: "projects/on-going-project-nuvali/videos/prj-on-going-vid5.mp4" }
+    { type: "video", src: "projects/on-going-project-nuvali/videos/prj-on-going-vid5.mp4" }
 ];
 
 /* -----------------------------------------
