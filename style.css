@@ -254,3 +254,55 @@ footer {
         letter-spacing: 0.5px;
     }
 }
+/* NAVIGATION BAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: #000;
+    height: auto; /* allow natural height */
+}
+
+/* Logo beside text */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* Bigger, consistent logo */
+.logo-img {
+    width: 90px;   /* increase size */
+    height: auto;
+}
+
+/* Gold text beside logo */
+.logo-text {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #d4b06a;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    nav {
+        padding: 14px 20px;
+    }
+
+    .logo-img {
+        width: 65px;
+    }
+
+    .logo-text {
+        font-size: 1rem;
+    }
+}
+/* FORCE consistent logo size across all pages */
+.logo-img {
+    width: 110px !important;
+    height: auto !important;
+}
