@@ -306,3 +306,41 @@ nav {
     width: 110px !important;
     height: auto !important;
 }
+/* Sub-page hero */
+.sub-hero {
+    background: #000;
+    color: #d4b06a;
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(212, 176, 106, 0.3);
+}
+
+.sub-hero-content h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.sub-hero-content p {
+    font-size: 1.1rem;
+    color: #e6d9b8;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .sub-hero {
+        padding: 60px 20px;
+    }
+
+    .sub-hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .sub-hero-content p {
+        font-size: 1rem;
+    }
+}
