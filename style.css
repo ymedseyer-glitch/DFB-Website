@@ -344,3 +344,22 @@ nav {
         font-size: 1rem;
     }
 }
+/* ABOUT PAGE ICONS */
+.about-icon {
+    font-size: 48px;
+    color: #d4b06a;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Make sure section titles stay centered */
+.section h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+/* Optional: add spacing consistency */
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
